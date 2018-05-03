@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="Yuta Taniguchi" name="description">
+  <title>谷口 雄太</title>
+  <link href="/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .material-icons {
+      font-family: "Material Icons";
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-feature-settings: "liga";
+      font-feature-settings: "liga"
+    }
+  </style>
+  <style>
+    html {
+      font-size: 16px;
+      word-spacing: 1px;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #394f6f;
+      background: #f4f5f6
+    }
+
+    h1,
+    html {
+      font-family: Mplus\ 1p, sans-serif;
+      font-weight: 300
+    }
+
+    *,
+    :after,
+    :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0
+    }
+
+    a {
+      color: inherit
+    }
+
+    a,
+    a:hover {
+      text-decoration: underline
+    }
+
+    a:hover {
+      color: #0047b3
+    }
+
+    .email {
+      font-family: monospace
+    }
+
+    .material-icons {
+      vertical-align: text-top
+    }
+  </style>
+  <style>
+    .container {
+      min-height: 100vh;
+      width: 80vw;
+      margin: 0 auto;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      background: #f4f5f6
+    }
+
+    .container,
+    .profile {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .profile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 3em auto
+    }
+
+    @media only screen and (min-width:46em) {
+      .profile {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+      }
+    }
+
+    .contact-container {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+      padding: 0 2em
+    }
+
+    .cv-container {
+      text-align: justify
+    }
+  </style>
+  <style>
+    .head-shot {
+      width: 10em;
+      height: 10em;
+      background-image: url(/head-shot.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 50%
+    }
+  </style>
+  <style>
+    .contact {
+      text-align: left
+    }
+
+    .name {
+      border-bottom: 1px solid #000
+    }
+
+    .email .at:before {
+      content: "@"
+    }
+
+    .affiliation>div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-top: .3em
+    }
+
+    .affiliation>div>i {
+      margin-right: .3em
+    }
+  </style>
+  <style>
+    .title {
+      font-family: Mplus\ 1p, sans-serif;
+      font-weight: 700
+    }
+
+    section {
+      margin: 2em 0
+    }
+
+    section>h1 {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background: #f4f5f6;
+      height: 32px;
+      height: 2rem;
+      line-height: 32px;
+      line-height: 2rem;
+      z-index: 2
+    }
+
+    section>section>h1 {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2em;
+      background: #f4f5f6;
+      z-index: 1
+    }
+
+    ol {
+      list-style: none;
+      padding-left: 56px;
+      padding-left: 3.5rem
+    }
+
+    ol>li {
+      counter-increment: my-ol-counter -1;
+      margin: .6em 0
+    }
+
+    ol>li:hover {
+      text-shadow: 0 0 .16px rgba(57, 79, 111, .5);
+      text-shadow: 0 0 .01rem rgba(57, 79, 111, .5)
+    }
+
+    ol>li:hover:before {
+      color: #f4f5f6;
+      background: #394f6f
+    }
+
+    ol>li:before {
+      content: counter(my-ol-counter);
+      display: inline-block;
+      position: absolute;
+      width: 48px;
+      width: 3rem;
+      height: 48px;
+      height: 3rem;
+      margin-left: -56px;
+      margin-left: -3.5rem;
+      text-align: center;
+      color: rgba(57, 79, 111, .5);
+      line-height: 48px;
+      line-height: 3rem;
+      font-size: 36.8px;
+      font-size: 2.3rem;
+      border: 1px solid rgba(57, 79, 111, .1);
+      font-family: Mplus\ 1p, sans-serif;
+      font-weight: 300
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div>
+    <div id="__layout">
+      <div>
+        <section class="container">
+          <div class="profile">
+            <div class="head-shot"></div>
+            <div class="contact-container">
+              <div class="contact">
+                <h1 class="name">
+                  谷口 雄太
+                </h1>
+                <div class="affiliation">
+                  <div><i class="material-icons">business</i>
+                    <div>
+                      九州大学 大学院 システム情報科学研究院
+                      <br>
+                      情報知能工学部門 実世界ロボティクス講座 助教
+                    </div>
+                  </div>
+                  <div><i class="material-icons">school</i>
+                    <div>博士（情報科学）</div>
+                  </div>
+                  <div><i class="material-icons">email</i><a href="mailto:taniguchi@ait.kyushu-u.ac.jp"
+                      class="email">taniguchi@ait.kyushu-u.ac.jp</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cv-container">
+            <div>
+              <section>
+                <h1>研究費獲得状況</h1>
+                <section>
+                  <h1>研究代表者</h1>
+                  <ul>
+                    <li><a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-17K12804/"><span
+                          class="title">学習者の体験をフィードバックとして顕在化させるプログラミング学習支援環境の開発</span></a><br>
+                      科学研究費助成事業 若手研究(B)
+                      <br>
+                      2017年4月1日〜2020年3月31日
+                  </ul>
+                </section>
+                <section>
+                  <h1>研究分担者</h1>
+                  <ul>
+                    <li><a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16H03080/"><span
+                          class="title">社会的共有調整学習理論に基づいたプロジェクト型学習支援システムの開発と評価</span></a><br>
+                      科学研究費助成事業 基盤研究(B)
+                      <br>
+                      2016年4月1日〜2019年3月31日
+                      <br>
+                      研究代表者: 山田 政寛
+                  </ul>
+                </section>
+              </section>
+              <section>
+                <h1>学歴</h1>
+                <ul>
+                  <li><span class="title">国立広島大学附属高等学校</span><br>
+                    2000年4月〜2003年3月
+                  <li><span class="title">九州大学理学部物理学科</span><br>
+                    2005年4月〜2009年3月
+                  <li><span class="title">九州大学大学院システム情報科学府情報学専攻修士課程</span><br>
+                    2009年4月〜2011年3月
+                  <li><span class="title">九州大学大学院システム情報科学府情報学専攻博士後期課程</span><br>
+                    2011年4月〜2014年3月
+                </ul>
+              </section>
+              <section>
+                <h1>学位</h1>
+                <ul>
+                  <li><span class="title">修士（理学）（九州大学）（シ情修第二一八八号）</span><br>
+                    2011年3月
+                  <li><span class="title">博士（情報科学）（九州大学）（シ情博甲第五三五号）</span><br>
+                    2014年3月
+                </ul>
+              </section>
+              <section>
+                <h1>職歴</h1>
+                <ul>
+                  <li><span class="title">特任研究員</span><br>
+                    徳島大学四国産学官連携イノベーション共同推進機構
+                    <br>
+                    2014年4月〜<span>2015年8月</span>
+                  <li><span class="title">特任研究員</span><br>
+                    徳島大学研究支援・産官学連携センター
+                    <br>
+                    2015年9月〜<span>2016年3月</span>
+                  <li><span class="title">特任助教</span><br>
+                    九州大学 基幹教育院 ラーニングアナリティクスセンター
+                    <br>
+                    2016年5月〜<span>2017年3月</span>
+                  <li><span class="title">特任助教</span><br>
+                    九州大学 情報基盤研究開発センター
+                    <br>
+                    2017年4月〜<span>2017年9月</span>
+                  <li><span class="title">助教</span><br>
+                    九州大学 システム情報科学研究院
+                    <br>
+                    2017年10月〜<span>現在</span>
+                </ul>
+              </section>
+              <section>
+                <h1>研究業績</h1>
+                <section>
+                  <h1>査読付きジャーナル論文</h1>
+                  <ol style="counter-reset:my-ol-counter 5">
+                    <li><span class="title">Probabilistic Model for Purity Values of
+                        Bacterial Genome Sequences</span><br>
+                      Yuta Taniguchi, Ryuji Masui, Toshihiro Aoyama, Daisuke Ikeda,
+                      <br>
+                      International Journal of Bioscience, Biochemistry and Bioinformatics,
+                      Vol.5,
+                      <!----><span>
+                        No.5,
+                      </span><span>
+                        pp.288–295,
+                      </span>
+                      <!---->
+                      2015.
+                    <li><span class="title">Replacing Log-Based Profiles to Context
+                        Profiles and Its Application to Context-aware Document Clustering</span><br>
+                      Yusuke Hosoi, Yuta Taniguchi, Daisuke Ikeda,
+                      <br>
+                      WSEAS Transactions on Information Science and Applications,
+                      Vol.11,
+                      <!---->
+                      <!----><span>
+                        pp.51–60,
+                      </span>
+                      <!---->
+                      2014.
+                    <li><span class="title">テキストに対するPurity尺度の適用と改良</span><br>
+                      谷口雄太, 池田大輔,
+                      <br>
+                      九州大学システム情報科学紀要,
+                      Vol.19,
+                      <span>
+                        Issue.1,
+                      </span>
+                      <!----><span>
+                        pp.1–6,
+                      </span>
+                      <!---->
+                      2014.
+                    <li><span class="title">The Purity Measure for Genomic Regions Leads
+                        to Horizontally Transferred Genes</span><br>
+                      Yuta Taniguchi, Yasuhiro Yamada, Osamu Maruyama, Satoru Kuhara, Daisuke Ikeda,
+                      <br>
+                      Journal of Bioinformatics and Computational Biology,
+                      Vol.11,
+                      <span>
+                        Issue.6,
+                      </span>
+                      <!---->
+                      <!----><span>
+                        p.1343002,
+                      </span>
+                      2013.
+                  </ol>
+                </section>
+                <section>
+                  <h1>査読付き会議論文</h1>
+                  <ol style="counter-reset:my-ol-counter 15">
+                    <li><span class="title">How are Students Struggling in Programming?
+                        Understanding Learning Processes from Multiple Learning Logs</span><br>
+                      Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, Shin’ichi Konomi,
+                      <br>
+                      Proceedings of the 11th International Conference on Educational Data Mining (EDM2018),
+                      <span>2018 (to appear).</span>
+                    <li><span class="title">Instructional Design and Evaluation of
+                        Science Education to Improve Collaborative Problem Solving Skills</span><br>
+                      Li Chen, Hirokazu Uemura, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin’ichi Konomi,
+                      Hiroaki Ogata, Masanori Yamada,
+                      <br>
+                      Proceedings of Society for Information Technology & Teacher Education International Conference,
+                      <span>pp.1364–1369, 2018.</span>
+                    <li><span class="title">On the Prediction of Students' Quiz Score by
+                        Recurrent Neural Network</span><br>
+                      Fumiya Okubo, Takayoshi Yamashita, Atsushi Shimada, Yuta Taniguchi, Shin’ichi Konomi,
+                      <br>
+                      Companion Proceedings of the 8th International Conference on Learning Analytics & Knowledge
+                      (LAK2018),
+                      <span>pp.1–6, 2018.</span>
+                    <li><span class="title">Online Change Detection for Monitoring
+                        Individual Student Behavior via Clickstream Data on e-Book System</span><br>
+                      Atsushi Shimada, Yuta Taniguchi, Fumiya Okubo, Shin’ichi Konomi, Hiroaki Ogata,
+                      <br>
+                      Proceedings of the 8th International Conference on Learning Analytics & Knowledge (LAK2018),
+                      <span>pp.446–450, 2018.</span>
+                    <li><span class="title">Effects of Prior Knowledge of High Achievers
+                        on Use of e-Book Highlights and Annotations</span><br>
+                      Misato Oi, Fumiya Okubo, Yuta Taniguchi, Masanori Yamada, Shin’ichi Konomi,
+                      <br>
+                      Proceedings of the 25th International Conference on Computers in Education (ICCE2017),
+                      <span>pp.682–687, 2017.</span>
+                    <li><span class="title">Analysis on Students' Usage of Highlighters
+                        on E-textbooks in Classroom</span><br>
+                      Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, Shin’ichi Konomi,
+                      <br>
+                      Proceedings of the 25th International Conference on Computers in Education (ICCE2017),
+                      <span>pp.514–516, 2017.</span>
+                    <li><span class="title">A Visualization System for Predicting
+                        Learning Activities Using State Transition Graphs</span><br>
+                      Fumiya Okubo, Atsushi Shimada, Yuta Taniguchi, Shin’ichi Konomi,
+                      <br>
+                      Proceedings of the 14th International Conference on Cognition and Exploratory Learning in the
+                      Digital Age (CELDA 2017),
+                      <span>pp.173–180, 2017.</span>
+                    <li><span class="title">Exploring Students' Learning Journals with
+                        Web-based Interactive Report Tool</span><br>
+                      Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, Shin’ichi Konomi,
+                      <br>
+                      Proceedings of the 14th International Conference on Cognition and Exploratory Learning in the
+                      Digital Age (CELDA 2017),
+                      <span>pp.251–254, 2017.</span>
+                    <li><span class="title">Revealing Hidden Impression Topics in
+                        Students' Journals Based on Nonnegative Matrix Factorization</span><br>
+                      Yuta Taniguchi, Daiki Suehiro, Atsushi Shimada, Hiroaki Ogata,
+                      <br>
+                      Proceedings of IEEE 17th International Conference on Advanced Learning Technologies,
+                      <span>pp.298–300, 2017.</span>
+                    <li><span class="title">Face-to-Face Teaching Analytics: Extracting
+                        Teaching Activities from E-book Logs via Time-Series Analysis</span><br>
+                      Daiki Suehiro, Yuta Taniguchi, Atsushi Shimada, Hiroaki Ogata,
+                      <br>
+                      Proceedings of IEEE International Conference on Advanced Learning Technologies,
+                      <span>pp.267–268, 2017.</span>
+                    <li><span class="title">M2B System: A Digital Learning Platform for
+                        Traditional Classrooms in University</span><br>
+                      Hiroaki Ogata, Yuta Taniguchi, Daiki Suehiro, Atsushi Shimada, Misato Oi, Fumiya Okubo, Masanori
+                      Yamada, Kentaro Kojima,
+                      <br>
+                      Practitioner Track Proceedings of the 7th International Learning Analytics & Knowledge Conference,
+                      <span>pp.155–162, 2017.</span>
+                    <li><span class="title">Real-time Learning Analytics for C
+                        Programming Language Courses</span><br>
+                      Xinyu Fu, Atsushi Shimada, Hiroaki Ogata, Yuta Taniguchi, Daiki Suehiro,
+                      <br>
+                      Proceedings of the Seventh International Learning Analytics & Knowledge Conference,
+                      <span>pp.280–288, 2017.</span>
+                    <li><span class="title">Generalization User Profiles to Context
+                        Profiles and Its Application to Context-aware Document Clustering</span><br>
+                      Yusuke Hosoi, Yuta Taniguchi, Daisuke Ikeda,
+                      <br>
+                      Proceedings of the Eighth International Conference on Communications and Information Technology,
+                      <span>pp.262–270, 2014.</span>
+                    <li><span class="title">Graph Clustering Based on Optimization of a
+                        Macroscopic Structure of Clusters</span><br>
+                      Yuta Taniguchi, Daisuke Ikeda,
+                      <br>
+                      Proceedings of the 14th International Conference on Discovery Science,
+                      <span>pp.335–350, 2011.</span>
+                  </ol>
+                </section>
+                <section>
+                  <h1>査読付きワークショップ論文</h1>
+                  <ol style="counter-reset:my-ol-counter 2">
+                    <li><span class="title">Discover Overlapping Topical Regions by
+                        Geo-semantic Clustering of Tweets</span><br>
+                      Yuta Taniguchi, Daiki Monzen, Lutfiana Sari Ariestien, Daisuke Ikeda,
+                      <br>
+                      Proceedings of the Eighth International Symposium on Mining and Web (Workshop of 29th
+                      International Conference on Advanced Information Networking and Applications (AINA)),
+                      pp.552–557,
+                      2015.
+                  </ol>
+                </section>
+                <section>
+                  <h1>特許</h1>
+                  <ol style="counter-reset:my-ol-counter 3">
+                    <li><span class="title">産学連携に利用可能な研究情報を収集して提示する研究情報提示装置、研究情報提示システム、及び、研究情報提示方法</span><br>
+                      荒木寛幸, 谷口雄太
+                      <br><span>
+                        特開2017-182391
+                        <br>
+                        2017年
+                      </span><br>
+                    <li><span class="title">産学連携マッチング支援システム</span><br>
+                      荒木寛幸, 谷口雄太
+                      <br><span>
+                        特開2017-182392
+                        <br>
+                        2017年
+                      </span><br>
+                  </ol>
+                </section>
+                <section>
+                  <h1>査読無しワークショップ論文</h1>
+                  <ol style="counter-reset:my-ol-counter 2">
+                    <li><span class="title">Towards a Learner-Centric Notification
+                        Environment for Multimodal Learning Platforms</span><br>
+                      Shin’ichi Konomi, Atsushi Shimada, Masanori Yamada, Fumiya Okubo, Yuta Taniguchi, Jingyun Wang,
+                      <br>
+                      Workshop on Multimodal Learning Analytics Across (Physical and Digital) Spaces (CrossMMLA), held
+                      in conjunction with the 12th European Conference on Technology Enhanced Learning (EC-TEL 2017),
+                      <!---->
+                      2017.
+                  </ol>
+                </section>
+                <section>
+                  <h1>国内発表</h1>
+                  <ol style="counter-reset:my-ol-counter 7">
+                    <li><span class="title">Extracting Teaching Activities from E-book
+                        Logs Using Time-Series Shapelets</span><br>
+                      Daiki Suehiro, Yuta Taniguchi, Atsushi Shimada, Hiroaki Oagata,
+                      <br>
+                      第20回画像の認識・理解シンポジウム（MIRU2017),
+                      2017.
+                    <li><span class="title">Behavioral Analysis and Visualization on
+                        Learning Logs from the CALL Course</span><br>
+                      Li Huiyong, Tsuchiya Tomoyuki, Suehiro Daiki, Taniguchi Yuta, Shimada Atsushi, Suzuki Yubun,
+                      Ohashi Hiroshi, Ogata Hiroaki,
+                      <br>
+                      2017年度 人工知能学会全国大会,
+                      2017.
+                    <li><span class="title">教育データのオープン化に向けて</span><br>
+                      末廣大貴, 毛利考佑, 谷口雄太, 大久保文哉, 島田敬士, 緒方広明,
+                      <br>
+                      電子情報通信学会 パターン認識・メディア理解研究会,
+                      2016.
+                    <li><span class="title">研究者情報を活用したURA的産学連携手法について ---
+                        研究者DBとしてのMATCIを活用した産学連携</span><br>
+                      谷口雄太, 水野充, 堀内美穂, 斉藤卓也, 荒木寛幸,
+                      <br>
+                      RA協議会第1回年次大会,
+                      2015.
+                    <li><span class="title">URAの研究者情報DBとして活用できるMATCIの紹介</span><br>
+                      谷口雄太, 宮本賢治, 永冨太一, 土居修身, 井内健介, 下方晃博, 荒木寛幸,
+                      <br>
+                      RA協議会第1回年次大会,
+                      2015.
+                    <li><span class="title">iPad を用いた「デジたま講座」教材・教具の開発</span><br>
+                      竹田正幸, 池田大輔, 谷口雄太, 脇田早苗, 池内昌子,
+                      <br>
+                      日本情報科教育学会第6 回全国大会,
+                      2013.
+                  </ol>
+                </section>
+              </section>
+              <section>
+                <h1>受賞</h1>
+                <ol style="counter-reset:my-ol-counter 2">
+                  <li><span class="title">iPad を用いた「デジたま講座」教材・教具の開発</span><br>
+                    竹田正幸, 池田大輔, 谷口雄太, 脇田早苗, 池内昌子,
+                    <br>
+                    日本情報科教育学会第6回全国大会 優秀デモンストレーション賞, 2013.
+                </ol>
+              </section>
+              <section>
+                <h1>教育</h1>
+                <ol style="counter-reset:my-ol-counter 2">
+                  <li><span class="title">データ分析に基づくアクティブラーナーの育成</span><br>
+                    福岡県立糸島高等学校 職員研修 講師
+                    <br>
+                    2017年
+                </ol>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
