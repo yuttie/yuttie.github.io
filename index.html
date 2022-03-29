@@ -1,1584 +1,1634 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="谷口 雄太" name="description">
-  <title>谷口 雄太</title>
-  <link href="/favicon.ico" rel="icon" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,700&display=swap&subset=japanese" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-    .material-icons {
-      font-family: 'Material Icons';
-      font-weight: 400;
-      font-style: normal;
-      font-size: 24px;
-      display: inline-block;
-      line-height: 1;
-      text-transform: none;
-      letter-spacing: normal;
-      word-wrap: normal;
-      white-space: nowrap;
-      direction: ltr;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-feature-settings: 'liga';
-      font-feature-settings: 'liga'
-    }
-  </style>
-  <style>
-    html {
-      font-size: 16px;
-      word-spacing: 1px;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      color: #394f6f;
-      background: #f4f5f6
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="谷口 雄太" name="description">
+    <title>谷口 雄太</title>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,700&display=swap&subset=japanese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      .material-icons {
+        font-family: 'Material Icons';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-feature-settings: 'liga';
+        font-feature-settings: 'liga'
+      }
+    </style>
+    <style>
+      html {
+        font-size: 16px;
+        word-spacing: 1px;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #454650;
+        background: #ffffff
+      }
 
-    h1,
-    html {
-      font-family: 'Noto Sans JP', sans-serif;
-      font-weight: 300
-    }
+      h1,
+      html {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 300
+      }
 
-    *,
-    :after,
-    :before {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      margin: 0
-    }
+      *,
+      :after,
+      :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0
+      }
 
-    a {
-      color: inherit
-    }
+      a {
+        color: inherit
+      }
 
-    a,
-    a:hover {
-      text-decoration: underline
-    }
+      a,
+      a:hover {
+        text-decoration: underline
+      }
 
-    a:hover {
-      color: #0047b3
-    }
+      a:hover {
+        color: #0047b3
+      }
 
-    a::after {
-      font-family: 'Material Icons';
-      content: 'link';
-    }
+      a::after {
+        font-family: 'Material Icons';
+        content: 'link';
+      }
 
-    .email {
-      font-family: monospace
-    }
+      .email {
+        font-family: monospace
+      }
 
-    .material-icons {
-      vertical-align: text-top
-    }
-  </style>
-  <style>
-    .container {
-      min-height: 100vh;
-      width: 80vw;
-      margin: 0 auto;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      text-align: center;
-      background: #f4f5f6
-    }
+      .material-icons {
+        vertical-align: text-top
+      }
+    </style>
+    <style>
+      .container {
+        min-height: 100vh;
+        width: 80vw;
+        margin: 0 auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+      }
 
-    .container,
-    .profile {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center
-    }
-
-    .profile {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      margin: 3em auto
-    }
-
-    @media only screen and (min-width:46em) {
+      .container,
       .profile {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+      }
+
+      .profile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 3em auto
+      }
+
+      @media only screen and (min-width:46em) {
+        .profile {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row
+        }
+      }
+
+      .contact-container {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0;
+        padding: 0 2em
+      }
+
+      .cv-container {
+        text-align: justify
+      }
+    </style>
+    <style>
+      .head-shot {
+        width: 10em;
+        height: 10em;
+        background-image: url(/head-shot.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50%
+      }
+    </style>
+    <style>
+      .contact {
+        text-align: left
+      }
+
+      .name {
+        font-size: 2em;
+        border-bottom: 1px solid #000
+      }
+
+      .email .at:before {
+        content: '@';
+      }
+
+      .affiliation>div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
-        flex-direction: row
+        flex-direction: row;
+        margin-top: .3em
       }
-    }
 
-    .contact-container {
-      -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-      flex: 1 1 0;
-      padding: 0 2em
-    }
+      .affiliation>div>i {
+        margin-right: .3em
+      }
+    </style>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
+      }
 
-    .cv-container {
-      text-align: justify
-    }
-  </style>
-  <style>
-    .head-shot {
-      width: 10em;
-      height: 10em;
-      background-image: url(/head-shot.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      border-radius: 50%
-    }
-  </style>
-  <style>
-    .contact {
-      text-align: left
-    }
+      section {
+        margin: 2em 0
+      }
 
-    .name {
-      font-size: 2em;
-      border-bottom: 1px solid #000
-    }
+      section>h1 {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(4px);
+        height: 2rem;
+        line-height: 2rem;
+        z-index: 2;
+      }
 
-    .email .at:before {
-      content: '@';
-    }
+      section>section>h1 {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 2em;
+        z-index: 1
+      }
 
-    .affiliation>div {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      margin-top: .3em
-    }
+      ol {
+        list-style: none;
+        padding-left: 3.5rem
+      }
 
-    .affiliation>div>i {
-      margin-right: .3em
-    }
-  </style>
-  <style>
-    .title {
-      font-family: 'Noto Sans JP', sans-serif;
-      font-weight: 700;
-    }
+      ol>li {
+        counter-increment: my-ol-counter -1;
+        margin: .6em 0
+      }
 
-    section {
-      margin: 2em 0
-    }
+      ol>li:hover {
+        text-shadow: 0 0 .01rem rgba(57, 79, 111, .5)
+      }
 
-    section>h1 {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      background: #f4f5f6;
-      height: 32px;
-      height: 2rem;
-      line-height: 32px;
-      line-height: 2rem;
-      z-index: 2;
-    }
+      ol>li:hover:before {
+        color: #f4f5f6;
+        background: #394f6f
+      }
 
-    section>section>h1 {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 2em;
-      background: #f4f5f6;
-      z-index: 1
-    }
+      ol>li:before {
+        content: counter(my-ol-counter);
+        display: inline-block;
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        margin-left: -3.5rem;
+        text-align: center;
+        color: rgba(57, 79, 111, .5);
+        line-height: 3rem;
+        font-size: 2.3rem;
+        border: 1px solid rgba(57, 79, 111, .1);
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 300
+      }
 
-    ol {
-      list-style: none;
-      padding-left: 56px;
-      padding-left: 3.5rem
-    }
+      input#japanese {
+        display: none;
+      }
 
-    ol>li {
-      counter-increment: my-ol-counter -1;
-      margin: .6em 0
-    }
+      #lang-toggler {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+      }
+      #lang-toggler::before {
+        content: "Switch to Japanese";
+      }
+      input#japanese:checked + #lang-toggler::before {
+        content: "Switch to English";
+      }
 
-    ol>li:hover {
-      text-shadow: 0 0 .16px rgba(57, 79, 111, .5);
-      text-shadow: 0 0 .01rem rgba(57, 79, 111, .5)
-    }
+      .ja {
+        display: none;
+      }
 
-    ol>li:hover:before {
-      color: #f4f5f6;
-      background: #394f6f
-    }
+      input#japanese:checked ~ section .en {
+        display: none;
+      }
+      input#japanese:checked ~ section .ja {
+        display: unset;
+      }
+    </style>
+  </head>
 
-    ol>li:before {
-      content: counter(my-ol-counter);
-      display: inline-block;
-      position: absolute;
-      width: 48px;
-      width: 3rem;
-      height: 48px;
-      height: 3rem;
-      margin-left: -56px;
-      margin-left: -3.5rem;
-      text-align: center;
-      color: rgba(57, 79, 111, .5);
-      line-height: 48px;
-      line-height: 3rem;
-      font-size: 36.8px;
-      font-size: 2.3rem;
-      border: 1px solid rgba(57, 79, 111, .1);
-      font-family: 'Noto Sans JP', sans-serif;
-      font-weight: 300
-    }
-  </style>
-</head>
+  <body>
+    <input type="checkbox" id="japanese">
+    <label id="lang-toggler" for="japanese"></label>
 
-<body>
-  <section class="container">
-    <div class="profile">
-      <div class="head-shot"></div>
-      <div class="contact-container">
-        <div class="contact">
-          <h1 class="name">谷口 雄太</h1>
-          <div class="affiliation">
-            <div><i class="material-icons">business</i>
-              <div>
-                九州大学 大学院 情報基盤研究開発センター
-                <br>
-                教育情報基盤研究部門 助教
+    <section class="container">
+      <div class="profile">
+        <div class="head-shot"></div>
+        <div class="contact-container">
+          <div class="contact">
+            <h1 class="name">
+              <span class="en">Yuta Taniguchi</span>
+              <span class="ja">谷口 雄太</span>
+            </h1>
+            <div class="affiliation">
+              <div><i class="material-icons">business</i>
+                <div>
+                  <span class="en">Research Institute for Information Technology, Kyushu University, Fukuoka, Japan</span>
+                  <span class="ja">九州大学 大学院 情報基盤研究開発センター</span>
+                  <br>
+                  <span class="en">Section of Educational Information Assistant Professor</span>
+                  <span class="ja">教育情報基盤研究部門 助教</span>
+                </div>
               </div>
+              <div><i class="material-icons">school</i>
+                <div>
+                  <span class="en">Ph.D. in Informatics</span>
+                  <span class="ja">博士（情報科学）</span>
+                </div>
+              </div>
+              <div><i class="material-icons">email</i><span class="email">taniguchi.yuta.941<span class="at"></span>m.kyushu-u.ac.jp</span></div>
             </div>
-            <div><i class="material-icons">school</i>
-              <div>博士（情報科学）</div>
-            </div>
-            <div><i class="material-icons">email</i><span class="email">taniguchi.yuta.941<span class="at"></span>m.kyushu-u.ac.jp</span></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cv-container">
-      <section>
-        <h1>研究費獲得状況</h1>
+      <div class="cv-container">
         <section>
-          <h1>研究代表者</h1>
+          <h1>
+            <span class="en">Grants</span>
+            <span class="ja">研究費獲得状況</span>
+          </h1>
+          <section>
+            <h1>
+              <span class="en">As Principal Investigator</span>
+              <span class="ja">研究代表者</span>
+            </h1>
+            <ul>
+            
+            
+              <li>
+                <a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-21K17863/"><span class="title">学習状況に応じて動的に最適化される仮想的学習環境の構築</span></a><br>
+                科学研究費助成事業 若手研究
+                <br>
+                2021年4月1日〜2024年3月31日
+            
+            
+            
+            
+            
+              <li>
+                <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-17K12804/"><span class="title">学習者の体験をフィードバックとして顕在化させるプログラミング学習支援環境の開発</span></a><br>
+                科学研究費助成事業 若手研究(B)
+                <br>
+                2017年4月1日〜2021年3月31日
+            
+            
+            
+            
+            </ul>
+          </section>
+          <section>
+            <h1>
+              <span class="en">As Co-Investigator</span>
+              <span class="ja">研究分担者</span>
+            </h1>
+            <ul>
+            
+            
+            
+            
+              <li>
+                <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19H01716/"><span class="title">個別・協調学習の往還を支援するインタラクション高度化基盤の開発と評価</span></a><br>
+                科学研究費助成事業 基盤研究(B)
+                <br>
+                2019年4月1日〜2023年3月31日
+                <br>
+                研究代表者: 山田 政寛
+            
+            
+            
+            
+            
+              <li>
+                <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16H03080/"><span class="title">社会的共有調整学習理論に基づいたプロジェクト型学習支援システムの開発と評価</span></a><br>
+                科学研究費助成事業 基盤研究(B)
+                <br>
+                2016年4月1日〜2019年3月31日
+                <br>
+                研究代表者: 山田 政寛
+            
+            
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h1>
+            <span class="en">Education</span>
+            <span class="ja">学歴</span>
+          </h1>
           <ul>
           
           
-            <li>
-              <a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-21K17863/"><span class="title">学習状況に応じて動的に最適化される仮想的学習環境の構築</span></a><br>
-              科学研究費助成事業 若手研究
-              <br>
-              2021年4月1日〜2024年3月31日
-          
-          
-          
           
           
             <li>
-              <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-17K12804/"><span class="title">学習者の体験をフィードバックとして顕在化させるプログラミング学習支援環境の開発</span></a><br>
-              科学研究費助成事業 若手研究(B)
+              <span class="title">国立広島大学附属高等学校</span>
               <br>
-              2017年4月1日〜2021年3月31日
+              2000年4月〜2003年3月
           
           
+          
+            <li>
+              <span class="title">九州大学理学部物理学科</span>
+              <br>
+              2005年4月〜2009年3月
+          
+          
+          
+            <li>
+              <span class="title">九州大学大学院システム情報科学府情報学専攻修士課程</span>
+              <br>
+              2009年4月〜2011年3月
+          
+          
+          
+            <li>
+              <span class="title">九州大学大学院システム情報科学府情報学専攻博士後期課程</span>
+              <br>
+              2011年4月〜2014年3月
           
           
           </ul>
         </section>
         <section>
-          <h1>研究分担者</h1>
+          <h1>
+            <span class="en">Academic Degrees</span>
+            <span class="ja">学位</span>
+          </h1>
           <ul>
           
-          
-          
+            <li>
+              <span class="title">学士（理学）（九州大学）</span>
+              <br>
+              2009年3月
           
             <li>
-              <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19H01716/"><span class="title">個別・協調学習の往還を支援するインタラクション高度化基盤の開発と評価</span></a><br>
-              科学研究費助成事業 基盤研究(B)
+              <span class="title">修士（理学）（九州大学）</span>
               <br>
-              2019年4月1日〜2023年3月31日
-              <br>
-              研究代表者: 山田 政寛
-          
-          
-          
-          
+              2011年3月
           
             <li>
-              <a href="https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16H03080/"><span class="title">社会的共有調整学習理論に基づいたプロジェクト型学習支援システムの開発と評価</span></a><br>
-              科学研究費助成事業 基盤研究(B)
+              <span class="title">博士（情報科学）（九州大学）</span>
               <br>
-              2016年4月1日〜2019年3月31日
-              <br>
-              研究代表者: 山田 政寛
-          
+              2014年3月
           
           </ul>
         </section>
-      </section>
-      <section>
-        <h1>学歴</h1>
-        <ul>
-        
-        
-        
-        
-          <li>
-            <span class="title">国立広島大学附属高等学校</span>
-            <br>
-            2000年4月〜2003年3月
-        
-        
-        
-          <li>
-            <span class="title">九州大学理学部物理学科</span>
-            <br>
-            2005年4月〜2009年3月
-        
-        
-        
-          <li>
-            <span class="title">九州大学大学院システム情報科学府情報学専攻修士課程</span>
-            <br>
-            2009年4月〜2011年3月
-        
-        
-        
-          <li>
-            <span class="title">九州大学大学院システム情報科学府情報学専攻博士後期課程</span>
-            <br>
-            2011年4月〜2014年3月
-        
-        
-        </ul>
-      </section>
-      <section>
-        <h1>学位</h1>
-        <ul>
-        
-          <li>
-            <span class="title">学士（理学）（九州大学）</span>
-            <br>
-            2009年3月
-        
-          <li>
-            <span class="title">修士（理学）（九州大学）</span>
-            <br>
-            2011年3月
-        
-          <li>
-            <span class="title">博士（情報科学）（九州大学）</span>
-            <br>
-            2014年3月
-        
-        </ul>
-      </section>
-      <section>
-        <h1>職歴</h1>
-        <ul>
-        
-          <li>
-            <span class="title">特任研究員</span>
-            <br>
-            徳島大学四国産学官連携イノベーション共同推進機構
-            <br>
-            
-            2014年4月〜2015年8月
-            
-        
-          <li>
-            <span class="title">特任研究員</span>
-            <br>
-            徳島大学研究支援・産官学連携センター
-            <br>
-            
-            2015年9月〜2016年3月
-            
-        
-          <li>
-            <span class="title">特任助教</span>
-            <br>
-            九州大学 基幹教育院 ラーニングアナリティクスセンター
-            <br>
-            
-            2016年5月〜2017年3月
-            
-        
-          <li>
-            <span class="title">特任助教</span>
-            <br>
-            九州大学 情報基盤研究開発センター
-            <br>
-            
-            2017年4月〜2017年9月
-            
-        
-          <li>
-            <span class="title">助教</span>
-            <br>
-            九州大学 システム情報科学研究院
-            <br>
-            
-            2017年10月〜2020年11月
-            
-        
-          <li>
-            <span class="title">助教</span>
-            <br>
-            九州大学 情報基盤研究開発センター
-            <br>
-            
-            2020年12月〜現在
-            
-        
-        </ul>
-      </section>
-      <section>
-        <h1>Publications</h1>
         <section>
-          <h1>Refereed Book Chapter</h1>
-          <ol style="counter-reset:my-ol-counter 2">
+          <h1>
+            <span class="en">Professional Background</span>
+            <span class="ja">職歴</span>
+          </h1>
+          <ul>
           
             <li>
-              <span class="title">Learning Support Systems Based on Cohesive Learning Analytics</span>
+              <span class="title">特任研究員</span>
+              <br>
+              徳島大学四国産学官連携イノベーション共同推進機構
               <br>
               
-              Fumiya Okubo, Masanori Yamada, Misato Oi, Atsushi Shimada, Yuta Taniguchi, Shin'ichi Konomi
+              2014年4月〜2015年8月
               
-              <br>
-              Myint Swe Khine(ed.),
-              Emerging Trends in Learning Analytics: Leveraging the Power of Education Data,
-              pp.223&ndash;248,
-              2019,
-              Brill Publisher, Netherlands.
           
-          </ol>
+            <li>
+              <span class="title">特任研究員</span>
+              <br>
+              徳島大学研究支援・産官学連携センター
+              <br>
+              
+              2015年9月〜2016年3月
+              
+          
+            <li>
+              <span class="title">特任助教</span>
+              <br>
+              九州大学 基幹教育院 ラーニングアナリティクスセンター
+              <br>
+              
+              2016年5月〜2017年3月
+              
+          
+            <li>
+              <span class="title">特任助教</span>
+              <br>
+              九州大学 情報基盤研究開発センター
+              <br>
+              
+              2017年4月〜2017年9月
+              
+          
+            <li>
+              <span class="title">助教</span>
+              <br>
+              九州大学 システム情報科学研究院
+              <br>
+              
+              2017年10月〜2020年11月
+              
+          
+            <li>
+              <span class="title">助教</span>
+              <br>
+              九州大学 情報基盤研究開発センター
+              <br>
+              
+              2020年12月〜現在
+              
+          
+          </ul>
         </section>
         <section>
-          <h1>Refereed Journal Articles</h1>
-          <ol style="counter-reset:my-ol-counter 9">
-          
-            <li>
-              
-              <a href="https://doi.org/10.1186/s40561-021-00183-6"><span class="title">Exploring jump back behavior patterns and reasons in e-book system</span></a>
-              
-              <br>
-              
-              Boxuan Ma, Min Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              Smart Learning Environments,
-              Vol.9,
-              
-              Issue.1,
-              
-              
-              2022.
-          
-            <li>
-              
-              <a href="https://doi.org/10.1186/s40561-021-00177-4"><span class="title">Investigating course choice motivations in university environments</span></a>
-              
-              <br>
-              
-              Boxuan Ma, Min Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              Smart Learning Environments,
-              Vol.8,
-              
-              Issue.1,
-              
-              
-              2021.
-          
-            <li>
-              
-              <a href="https://doi.org/10.1186/s41039-021-00167-7"><span class="title">CourseQ: the impact of visual and interactive course recommendation in university environments</span></a>
-              
-              <br>
-              
-              Boxuan Ma, Min Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              Research and Practice in Technology Enhanced Learning,
-              Vol.16,
-              
-              Issue.1,
-              
-              
-              2021.
-          
-            <li>
-              
-              <a href="https://doi.org/10.52731/ijirm.v4.i1.480"><span class="title">Automatic Identification of Dataset Names in Scholarly Articles of Various Disciplines</span></a>
-              
-              <br>
-              
-              Daisuke Ikeda, Kota Nagamizo, Yuta Taniguchi
-              
-              <br>
-              International Journal of Institutional Research and Management,
-              Vol.4,
-              
-              Issue.1,
-              
-              
-              pp.17&ndash;30,
-              
-              2020.
-          
-            <li>
-              
-              <a href="https://doi.org/10.1007/s10758-020-09436-8"><span class="title">Exploring Factors that Influence Collaborative Problem Solving Awareness in Science Education</span></a>
-              
-              <br>
-              
-              Li Chen, Koichi Inoue, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Hiroaki Ogata, Masanori Yamada
-              
-              <br>
-              Technology, Knowledge and Learning,
-              Vol.25,
-              
-              
-              pp.337&ndash;366,
-              
-              2020.
-          
-            <li>
-              
-              <a href="https://doi.org/10.1186/s41039-019-0119-y"><span class="title">Direction of collaborative problem solving-based STEM learning by learning analytics approach</span></a>
-              
-              <br>
-              
-              Li Chen, Nobuyuki Yoshimatsu, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Atsushi Shimada, Hiroaki Ogata, Masanori Yamada
-              
-              <br>
-              Research and Practice in Technology Enhanced Learning,
-              Vol.14,
-              
-              Issue.1,
-              
-              
-              2019.
-          
-            <li>
-              
-              <span class="title">Probabilistic Model for Purity Values of Bacterial Genome Sequences</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Ryuji Masui, Toshihiro Aoyama, Daisuke Ikeda
-              
-              <br>
-              International Journal of Bioscience, Biochemistry and Bioinformatics,
-              Vol.5,
-              
-              Issue.5,
-              
-              
-              pp.288&ndash;295,
-              
-              2015.
-          
-            <li>
-              
-              <span class="title">The Purity Measure for Genomic Regions Leads to Horizontally Transferred Genes</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Yasuhiro Yamada, Osamu Maruyama, Satoru Kuhara, Daisuke Ikeda
-              
-              <br>
-              Journal of Bioinformatics and Computational Biology,
-              Vol.11,
-              
-              Issue.6,
-              
-              
-              p.1343002,
-              
-              2013.
-          
-          </ol>
+          <h1>Publications</h1>
+          <section>
+            <h1>Refereed Book Chapter</h1>
+            <ol style="counter-reset:my-ol-counter 2">
+            
+              <li>
+                
+                <a href="https://doi.org/10.1163/9789004399273_012"><span class="title">Learning Support Systems Based on Cohesive Learning Analytics</span></a>
+                
+                <br>
+                
+                Fumiya Okubo, Masanori Yamada, Misato Oi, Atsushi Shimada, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                Myint Swe Khine(ed.),
+                Emerging Trends in Learning Analytics: Leveraging the Power of Education Data,
+                pp.223&ndash;248,
+                2019,
+                Brill Publisher, Netherlands.
+            
+            </ol>
+          </section>
+          <section>
+            <h1>Refereed Journal Articles</h1>
+            <ol style="counter-reset:my-ol-counter 9">
+            
+              <li>
+                
+                <a href="https://doi.org/10.1186/s40561-021-00183-6"><span class="title">Exploring jump back behavior patterns and reasons in e-book system</span></a>
+                
+                <br>
+                
+                Boxuan Ma, Min Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                Smart Learning Environments,
+                Vol.,
+                
+                
+                .
+            
+              <li>
+                
+                <a href="https://doi.org/10.1186/s40561-021-00177-4"><span class="title">Investigating course choice motivations in university environments</span></a>
+                
+                <br>
+                
+                Boxuan Ma, Min Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                Smart Learning Environments,
+                Vol.,
+                
+                
+                .
+            
+              <li>
+                
+                <a href="https://doi.org/10.1186/s41039-021-00167-7"><span class="title">CourseQ: the impact of visual and interactive course recommendation in university environments</span></a>
+                
+                <br>
+                
+                Boxuan Ma, Min Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                Research and Practice in Technology Enhanced Learning,
+                Vol.,
+                
+                
+                .
+            
+              <li>
+                
+                <a href="https://doi.org/10.52731/ijirm.v4.i1.480"><span class="title">Automatic Identification of Dataset Names in Scholarly Articles of Various Disciplines</span></a>
+                
+                <br>
+                
+                Daisuke Ikeda, Kota Nagamizo, and Yuta Taniguchi
+                
+                <br>
+                International Journal of Institutional Research and Management,
+                Vol.,
+                
+                
+                pp.17&ndash;30,
+                
+                .
+            
+              <li>
+                
+                <a href="https://doi.org/10.1007/s10758-020-09436-8"><span class="title">Exploring Factors that Influence Collaborative Problem Solving Awareness in Science Education</span></a>
+                
+                <br>
+                
+                Li Chen, Koichi Inoue, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Hiroaki Ogata, and Masanori Yamada
+                
+                <br>
+                Technology, Knowledge and Learning,
+                Vol.,
+                
+                
+                pp.337&ndash;366,
+                
+                .
+            
+              <li>
+                
+                <a href="https://doi.org/10.1186/s41039-019-0119-y"><span class="title">Direction of collaborative problem solving-based STEM learning by learning analytics approach</span></a>
+                
+                <br>
+                
+                Li Chen, Nobuyuki Yoshimatsu, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Atsushi Shimada, Hiroaki Ogata, and Masanori Yamada
+                
+                <br>
+                Research and Practice in Technology Enhanced Learning,
+                Vol.,
+                
+                
+                .
+            
+              <li>
+                
+                <a href="https://doi.org/10.17706/IJBBB"><span class="title">Probabilistic Model for Purity Values of Bacterial Genome Sequences</span></a>
+                
+                <br>
+                
+                Yuta Taniguchi, Ryuji Masui, Toshihiro Aoyama, and Daisuke Ikeda
+                
+                <br>
+                International Journal of Bioscience, Biochemistry and Bioinformatics,
+                Vol.,
+                
+                
+                pp.288&ndash;295,
+                
+                .
+            
+              <li>
+                
+                <a href="https://doi.org/10.1142/S0219720013430026"><span class="title">The Purity Measure for Genomic Regions Leads to Horizontally Transferred Genes</span></a>
+                
+                <br>
+                
+                Yuta Taniguchi, Yasuhiro Yamada, Osamu Maruyama, Satoru Kuhara, and Daisuke Ikeda
+                
+                <br>
+                Journal of Bioinformatics and Computational Biology,
+                Vol.,
+                
+                
+                p.1343002,
+                
+                .
+            
+            </ol>
+          </section>
+          <section>
+            <h1>Refereed Conference Papers</h1>
+            <ol style="counter-reset:my-ol-counter 30">
+            
+              <li>
+                
+                <span class="title">Few-shot Font Style Transfer between Different Languages</span>
+                
+                <br>
+                
+                Chenhao Li, Yuta Taniguchi, Min Lu, and Shin’ichi Konomi
+                
+                <br>
+                
+                In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV2021),
+                
+                
+                pp.433&ndash;442,
+                
+                2021.
+            
+              <li>
+                
+                <a href="http://doi.org/10.1007/978-3-030-77080-8_5"><span class="title">Generating Travel Recommendations for Older Adults Based on Their Social Media Activities</span></a>
+                
+                <br>
+                
+                Yuhong Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 13th International Conference on Cross-Cultural Design (CCD2021),
+                
+                
+                pp.44&ndash;55,
+                
+                2021.
+            
+              <li>
+                
+                <span class="title">How to Design Collaborative Problem Solving-based STEM Lessons based on the Perspective of Learning Behaviors?</span>
+                
+                <br>
+                
+                Li Chen, Yuta Taniguchi, Atsushi Shimada, and Masanori Yamada
+                
+                <br>
+                
+                In Proceedings of IEEE International Conference on Engineering, Technology and Education (TALE2020),
+                
+                
+                pp.197&ndash;204,
+                
+                2020.
+            
+              <li>
+                
+                <span class="title">Development of a Visualization System to Enhance Participation in Computer-Supported Collaboration Learning</span>
+                
+                <br>
+                
+                Yufan Xu, Yuta Taniguchi, Yoshiko Goda, Atsushi Shimada, and Masanori Yamada
+                
+                <br>
+                
+                In Proceedings of IEEE International Conference on Engineering, Technology and Education (TALE2020),
+                
+                
+                pp.635&ndash;639,
+                
+                2020.
+            
+              <li>
+                
+                <span class="title">Relationship between Learning Behaviors and Social Presence in Online Collaborative Learning</span>
+                
+                <br>
+                
+                Yufan Xu, Yuta Taniguchi, Yoshiko Goda, Atsushi Shimada, and Masanori Yamada
+                
+                <br>
+                
+                In Proceedings of the 17th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2020),
+                
+                
+                2020.
+            
+              <li>
+                
+                <span class="title">Course Recommendation for University Environment</span>
+                
+                <br>
+                
+                Boxuan Ma, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 13th International Conference on Educational Data Mining (EDM2020),
+                
+                
+                pp.460&ndash;466,
+                
+                2020.
+            
+              <li>
+                
+                <span class="title">Examining Language-agnostic Methods of Automatic Coding in the Community of Inquiry Framework</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Shin'ichi Konomi, and Yoshiko Goda
+                
+                <br>
+                
+                In Proceedings of the 16th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2019),
+                
+                
+                2019.
+            
+              <li>
+                
+                <span class="title">K-Tips: Knowledge Extension Based on Tailor-made Information Provision System</span>
+                
+                <br>
+                
+                Keita Nakayama, Atsushi Shimada, Tsubasa Minematsu, Yuta Taniguchi, and Rin-Ichiro Taniguchi
+                
+                <br>
+                
+                In Proceedings of the 16th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2019),
+                
+                
+                2019.
+            
+              <li>
+                
+                <span class="title">Investigating Error Resolution Processes in C Programming Exercise Courses</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Atsushi Shimada, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 12th International Conference on Educational Data Mining (EDM2019),
+                
+                
+                pp.655&ndash;658,
+                
+                2019.
+            
+              <li>
+                
+                <span class="title">Optimizing Assignment of Students to Courses based on Learning Activity Analytics</span>
+                
+                <br>
+                
+                Atsushi Shimada, Kousuke Mouri, Yuta Taniguchi, Hiroaki Ogata, Rin-Ichiro Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 12th International Conference on Educational Data Mining (EDM2019),
+                
+                
+                pp.178&ndash;187,
+                
+                2019.
+            
+              <li>
+                
+                <span class="title">Toward Automatic Identification of Dataset Names in Scholarly Articles</span>
+                
+                <br>
+                
+                Daisuke Ikeda, and Yuta Taniguchi
+                
+                <br>
+                
+                In Proceedings of the 8th International Conference on Data Science and Institutional Research (DSIR2019),
+                
+                
+                pp.1128&ndash;1134,
+                
+                2019.
+            
+              <li>
+                
+                <span class="title">Recommending Highlights on Students' E-Textbooks</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Atsushi Shimada, Masanori Yamada, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 30th conference of the Society for Information Technology and Teacher Education (SITE2019),
+                
+                
+                pp.1128&ndash;1134,
+                
+                2019.
+            
+              <li>
+                
+                <span class="title">Page-wise Difficulty Level Estimation using e-Book Operation Logs</span>
+                
+                <br>
+                
+                Tetsuya Shiino, Atsushi Shimada, Tsubasa Minematsu, Kohei Hatano, Yuta Taniguchi, Shin'ichi Konomi, and Rinichiro Taniguchi
+                
+                <br>
+                
+                In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (LAK2019),
+                
+                
+                pp.233&ndash;234,
+                
+                2019.
+            
+              <li>
+                
+                <a href="https://ieeexplore.ieee.org/document/8615254"><span class="title">Relationships between Collaborative Problem Solving, Learning Performance and Learning Behavior in Science Education</span></a>
+                
+                <br>
+                
+                Li Chen, Hirokazu Uemura, Hao Hao, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Hiroaki Ogata, and Masanori Yamada
+                
+                <br>
+                
+                In Proceedings of IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE2018),
+                
+                
+                pp.17&ndash;24,
+                
+                2018.
+            
+              <li>
+                
+                <span class="title">BR-Map: Concept Map System Using e-Book logs</span>
+                
+                <br>
+                
+                Masanori Yamada, Atsushi Shimada, Misato Oi, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 15th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2018),
+                
+                
+                pp.248&ndash;255,
+                
+                2018.
+            
+              <li>
+                
+                <span class="title">E-Book Learner Behaviors Under Meaningful Learning Modes</span>
+                
+                <br>
+                
+                Jingyun Wang, Fumiya Okubo, and Yuta Taniguchi
+                
+                <br>
+                
+                In Proceedings of the 13th Multidisciplinary Academic Conference on Education, Teaching and Learning (MAC-ETL2018),
+                
+                
+                pp.261&ndash;268,
+                
+                2018.
+            
+              <li>
+                
+                <span class="title">How are Students Struggling in Programming? Understanding Learning Processes from Multiple Learning Logs</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 11th International Conference on Educational Data Mining (EDM2018),
+                
+                
+                pp.510&ndash;513,
+                
+                2018.
+            
+              <li>
+                
+                <span class="title">Relation Analysis between Learning Activities on Digital Learning System and Seating Area in Classrooms</span>
+                
+                <br>
+                
+                Atsushi Shimada, Fumiya Okubo, Yuta Taniguchi, Hiroaki Ogata, Rin-Ichiro Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 11th International Conference on Educational Data Mining (EDM2018),
+                
+                
+                pp.561&ndash;564,
+                
+                2018.
+            
+              <li>
+                
+                <a href="https://www.learntechlib.org/p/182705/"><span class="title">Instructional Design and Evaluation of Science Education to Improve Collaborative Problem Solving Skills</span></a>
+                
+                <br>
+                
+                Li Chen, Hirokazu Uemura, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Hiroaki Ogata, and Masanori Yamada
+                
+                <br>
+                
+                In Proceedings of the 29th conference of the Society for Information Technology and Teacher Education (SITE2018),
+                
+                
+                pp.1364&ndash;1369,
+                
+                2018.
+            
+              <li>
+                
+                <a href="https://dl.acm.org/citation.cfm?id=3170412"><span class="title">Online Change Detection for Monitoring Individual Student Behavior via Clickstream Data on e-Book System</span></a>
+                
+                <br>
+                
+                Atsushi Shimada, Yuta Taniguchi, Fumiya Okubo, Shin'ichi Konomi, and Hiroaki Ogata
+                
+                <br>
+                
+                In Proceedings of the 8th International Conference on Learning Analytics & Knowledge (LAK2018),
+                
+                
+                pp.446&ndash;450,
+                
+                2018.
+            
+              <li>
+                
+                <span class="title">Effects of Prior Knowledge of High Achievers on Use of e-Book Highlights and Annotations</span>
+                
+                <br>
+                
+                Misato Oi, Fumiya Okubo, Yuta Taniguchi, Masanori Yamada, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 25th International Conference on Computers in Education (ICCE2017),
+                
+                
+                pp.682&ndash;687,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">Analysis on Students' Usage of Highlighters on E-textbooks in Classroom</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 25th International Conference on Computers in Education (ICCE2017),
+                
+                
+                pp.514&ndash;516,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">A Visualization System for Predicting Learning Activities Using State Transition Graphs</span>
+                
+                <br>
+                
+                Fumiya Okubo, Atsushi Shimada, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 14th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2017),
+                
+                
+                pp.173&ndash;180,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">Exploring Students' Learning Journals with Web-based Interactive Report Tool</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, and Shin'ichi Konomi
+                
+                <br>
+                
+                In Proceedings of the 14th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2017),
+                
+                
+                pp.251&ndash;254,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">Revealing Hidden Impression Topics in Students' Journals Based on Nonnegative Matrix Factorization</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Daiki Suehiro, Atsushi Shimada, and Hiroaki Ogata
+                
+                <br>
+                
+                In Proceedings of IEEE 17th International Conference on Advanced Learning Technologies (ICALT2017),
+                
+                
+                pp.298&ndash;300,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">Face-to-Face Teaching Analytics: Extracting Teaching Activities from E-book Logs via Time-Series Analysis</span>
+                
+                <br>
+                
+                Daiki Suehiro, Yuta Taniguchi, Atsushi Shimada, and Hiroaki Ogata
+                
+                <br>
+                
+                In Proceedings of IEEE 17th International Conference on Advanced Learning Technologies (ICALT2017),
+                
+                
+                pp.267&ndash;268,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">M2B System: A Digital Learning Platform for Traditional Classrooms in University</span>
+                
+                <br>
+                
+                Hiroaki Ogata, Yuta Taniguchi, Daiki Suehiro, Atsushi Shimada, Misato Oi, Fumiya Okubo, Masanori Yamada, and Kentaro Kojima
+                
+                <br>
+                
+                In Practitioner Track Proceedings of the 7th International Learning Analytics & Knowledge Conference (LAK2017),
+                
+                
+                pp.155&ndash;162,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">Real-time Learning Analytics for C Programming Language Courses</span>
+                
+                <br>
+                
+                Xinyu Fu, Atsushi Shimada, Hiroaki Ogata, Yuta Taniguchi, and Daiki Suehiro
+                
+                <br>
+                
+                In Proceedings of the 7th International Learning Analytics & Knowledge Conference (LAK2017),
+                
+                
+                pp.280&ndash;288,
+                
+                2017.
+            
+              <li>
+                
+                <span class="title">Graph Clustering Based on Optimization of a Macroscopic Structure of Clusters</span>
+                
+                <br>
+                
+                Yuta Taniguchi, and Daisuke Ikeda
+                
+                <br>
+                
+                In Proceedings of the 14th International Conference on Discovery Science (DS2011),
+                
+                
+                pp.335&ndash;350,
+                
+                2011.
+            
+            </ol>
+          </section>
+          <section>
+            <h1>Refereed Workshop Papers</h1>
+            <ol style="counter-reset:my-ol-counter 11">
+            
+              <li>
+                
+                <span class="title">Composing Learning Environments with e-Textbook System</span>
+                
+                <br>
+                
+                Yuta Taniguchi, Tsubasa Minematsu, and Atsushi Shimada
+                
+                
+                <br>
+                
+                In Proceedings of the 3rd International Workshop on Intelligent Textbooks (iTextbooks2021),
+                
+                
+                pp.35&ndash;39,
+                
+                2021.
+                
+            
+              <li>
+                
+                <span class="title">Exploration and Explanation: An Interactive Course Recommendation System for University Environments</span>
+                
+                <br>
+                
+                Boxuan Ma, Min Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                
+                <br>
+                
+                In Proceedings of the ACM IUI 2021 Workshops (ESIDA2021),
+                
+                
+                2021.
+                
+            
+              <li>
+                
+                <span class="title">The Normalized Impact Index for Keywords in Scholarly Papers to Detect Subtle Research Topics</span>
+                
+                <br>
+                
+                Daisuke Ikeda, Yuta Taniguchi, and Kazunori Koga
+                
+                
+                <br>
+                
+                In Proceedings of the 8th International Workshop on Mining Scientific Publications (WOSP2020),
+                
+                
+                pp.42&ndash;47,
+                
+                2020.
+                
+            
+              <li>
+                
+                <span class="title">Collecting and Integrating Multimodal Data from a Programming Exercise Environment</span>
+                
+                <br>
+                
+                Yuta Taniguchi, and Atsushi Shimada
+                
+                
+                <br>
+                
+                In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge,
+                
+                
+                pp.459&ndash;462,
+                
+                2020.
+                
+            
+              <li>
+                
+                <span class="title">Exploring the Design Space for Explainable Course Recommendation Systems in University Environments</span>
+                
+                <br>
+                
+                Boxuan Ma, Min Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                
+                <br>
+                
+                In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge (XLA2020),
+                
+                
+                pp.492&ndash;499,
+                
+                2020.
+                
+            
+              <li>
+                
+                <span class="title">Understanding Jump Back Behaviors in E-book System</span>
+                
+                <br>
+                
+                Boxuan Ma, Jiadong Chen, Chenhao Li, Likun Liu, Min Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                
+                <br>
+                
+                In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge (DC2020),
+                
+                
+                pp.623&ndash;631,
+                
+                2020.
+                
+            
+              <li>
+                
+                <span class="title">Can the Area marked in eBook Readers Specify Learning Performance?</span>
+                
+                <br>
+                
+                Yufan Xu, Xuewang Geng, Chen Li, Satomi Hamada, Yuta Taniguchi, Hiroaki Ogata, Atsushi Shimada, and Masanori Yamada
+                
+                
+                <br>
+                
+                In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge (DC2020),
+                
+                
+                pp.638&ndash;648,
+                
+                2020.
+                
+            
+              <li>
+                
+                <span class="title">On the Prediction of Students' Quiz Score by Recurrent Neural Network</span>
+                
+                <br>
+                
+                Fumiya Okubo, Takayoshi Yamashita, Atsushi Shimada, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                
+                <br>
+                
+                In Companion Proceedings of the 8th International Conference on Learning Analytics & Knowledge (CrossMMLA2018),
+                
+                
+                pp.1&ndash;6,
+                
+                2018.
+                
+            
+              <li>
+                
+                <span class="title">Towards a Learner-Centric Notification Environment for Multimodal Learning Platforms</span>
+                
+                <br>
+                
+                Shin'ichi Konomi, Atsushi Shimada, Masanori Yamada, Fumiya Okubo, Yuta Taniguchi, and Jingyun Wang
+                
+                
+                <br>
+                
+                In Proceedings of Workshop on Multimodal Learning Analytics Across (Physical and Digital) Spaces (CrossMMLA2017),
+                
+                
+                2017.
+                
+            
+              <li>
+                
+                <a href="https://ieeexplore.ieee.org/abstract/document/7096235"><span class="title">Discover Overlapping Topical Regions by Geo-semantic Clustering of Tweets</span></a>
+                
+                <br>
+                
+                Yuta Taniguchi, Daiki Monzen, Lutfiana Sari Ariestien, and Daisuke Ikeda
+                
+                
+                <br>
+                
+                In Proceedings of the 8th International Symposium on Mining and Web (MAW2015),
+                
+                
+                pp.552&ndash;557,
+                
+                2015.
+                
+            
+            </ol>
+          </section>
+          <section>
+            <h1>
+              <span class="en">Patents</span>
+              <span class="ja">特許</span>
+            </h1>
+            <ol style="counter-reset:my-ol-counter 3">
+            
+              <li>
+                <span class="title">産学連携に利用可能な研究情報を収集して提示する研究情報提示装置、研究情報提示システム、及び、研究情報提示方法</span>
+                <br>
+                
+                荒木寛幸, and 谷口雄太
+                
+                <br>
+                
+                特開2017-182391
+                
+                <br>
+                
+                2017年
+                
+            
+              <li>
+                <span class="title">産学連携マッチング支援システム</span>
+                <br>
+                
+                荒木寛幸, and 谷口雄太
+                
+                <br>
+                
+                特開2017-182392
+                
+                <br>
+                
+                2017年
+                
+            
+            </ol>
+          </section>
+          <section>
+            <h1>
+              <span class="en">Unrefereed Workshop Papers</span>
+              <span class="ja">査読無しワークショップ論文</span>
+            </h1>
+            <ol style="counter-reset:my-ol-counter 1">
+            
+            </ol>
+          </section>
+          <section>
+            <h1>
+              <span class="en">Domestic Presentations</span>
+              <span class="ja">国内発表</span>
+            </h1>
+            <ol style="counter-reset:my-ol-counter 22">
+            
+              <li>
+                <span class="title">手書きノートのページセグメンテーションによる学習活動の分析</span>
+                <br>
+                
+                李柏毅, 峰松翼, 谷口雄太, 大久保文哉, and 島田敬士
+                
+                <br>
+                第34回教育学習支援情報システム研究発表会 (CLE34), 2021.
+            
+              <li>
+                <span class="title">学習記事推薦のための推薦システムの開発と手法の評価</span>
+                <br>
+                
+                岡井成遊, 大久保文哉, 内山英昭, 峰松翼, 谷口雄太, and 島田敬士
+                
+                <br>
+                第34回教育学習支援情報システム研究発表会 (CLE34), 2021.
+            
+              <li>
+                <span class="title">圃場環境ダイジェストシステムの開発とその評価</span>
+                <br>
+                
+                志賀寛羽, 谷口雄太, 峰松翼, 大久保文哉, 島田敬士, and 谷口倫一郎
+                
+                <br>
+                第34回教育学習支援情報システム研究発表会 (CLE34), 2021.
+            
+              <li>
+                <span class="title">Multi-level Attention Networks for Font Style Transfer between Different Languages</span>
+                <br>
+                
+                Chenhao Li, Yuta Taniguchi, Min Lu, and Shin'ichi Konomi
+                
+                <br>
+                Visual Computing 2020, 2020.
+            
+              <li>
+                <span class="title">構成的学習環境</span>
+                <br>
+                
+                谷口雄太, 峰松翼, and 島田敬士
+                
+                <br>
+                第31回教育学習支援情報システム研究発表会 (CLE31), 2020.
+            
+              <li>
+                <span class="title">Design a Course Recommendation System Based on Association Rule for Hybrid Learning Environments</span>
+                <br>
+                
+                Boxuan Ma, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                火の国情報シンポジウム2019, 2019.
+            
+              <li>
+                <span class="title">Preliminary Analysis of Tweets to Predict Suicide Risks</span>
+                <br>
+                
+                Yuhong Lu, Min Lu, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                The 72nd Joint Conference of Electrical, Electronics and Information Engineers in Kyushu, 2019.
+            
+              <li>
+                <span class="title">Exploring a Model for Evaluating Teaching Slides Based on Their Layouts</span>
+                <br>
+                
+                Jiadong Chen, Yuta Taniguchi, Min Lu, Kohei Hatano, and Shin'ichi Konomi
+                
+                <br>
+                The 72nd Joint Conference of Electrical,Electronics and Information Engineers in Kyushu, 2019.
+            
+              <li>
+                <span class="title">Automatically Generate Slide Images Using Generative Adversarial Nets</span>
+                <br>
+                
+                Chenhao Li, Yuta Taniguchi, Min Lu, and Shin'ichi Konomi
+                
+                <br>
+                The 72nd Joint Conference of Electrical, Electronics and Informa-tion Engineers in Kyushu, 2019.
+            
+              <li>
+                <span class="title">Cleaning Massive Training Data for Intelligent Programming Support System</span>
+                <br>
+                
+                Likun Liu, Yuta Taniguchi, Min Lu, and Shin'ichi Konomi
+                
+                <br>
+                The 72nd Joint Conference of Electrical, Electronics andInformation Engineers in Kyushu, 2019.
+            
+              <li>
+                <span class="title">Learning Path Recommendation in University Environments Based on Sequence Mining</span>
+                <br>
+                
+                Boxuan Ma, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                The 81th National Convention of IPSJ, 2019.
+            
+              <li>
+                <span class="title">Comparative Analysis of Adaptive Learning Path Recommendation Algorithms</span>
+                <br>
+                
+                Boxuan Ma, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                The 71st Joint Conference of Electrical, Electronics and Informa-tion Engineers in Kyushu, 2018.
+            
+              <li>
+                <span class="title">Data-Driven Feedback for Students Based on Word Clouds</span>
+                <br>
+                
+                Shiman Cui, Yuta Taniguchi, and Shin'ichi Konomi
+                
+                <br>
+                The 71st Joint Conference of Electrical, Electronics and Information Engineers in Kyushu, 2018.
+            
+              <li>
+                <span class="title">Learning Style Based Collaborative Learning Construction: Can it Improve Group Work in a Learning Environment</span>
+                <br>
+                
+                Yiduo Gao, Yuta Taniguchi, Shin'ichi Konomi, Kentaro Kojima, Atsushi Shimada, and Hiroaki Ogata
+                
+                <br>
+                電子情報通信学会 信学技報 教育工学研究会 (ET2017-79), 2018.
+            
+              <li>
+                <span class="title">高等学校におけるラーニングアナリティックスに基づいた授業の試行</span>
+                <br>
+                
+                山田政寛, 大久保文哉, 谷口雄太, 毛利考佑, 島田敬士, 大井京, 緒方広明, 井上功一, and 木實新一
+                
+                <br>
+                第42回 教育システム情報学会 全国大会, 2017.
+            
+              <li>
+                <span class="title">Extracting Teaching Activities from E-book Logs Using Time-Series Shapelets</span>
+                <br>
+                
+                Daiki Suehiro, Yuta Taniguchi, Atsushi Shimada, and Hiroaki Oagata
+                
+                <br>
+                第20回画像の認識・理解シンポジウム（MIRU2017), 2017.
+            
+              <li>
+                <span class="title">Behavioral Analysis and Visualization on Learning Logs from the CALL Course</span>
+                <br>
+                
+                Li Huiyong, Tsuchiya Tomoyuki, Suehiro Daiki, Taniguchi Yuta, Shimada Atsushi, Suzuki Yubun, Ohashi Hiroshi, and Ogata Hiroaki
+                
+                <br>
+                2017年度 人工知能学会全国大会, 2017.
+            
+              <li>
+                <span class="title">教育データのオープン化に向けて</span>
+                <br>
+                
+                末廣大貴, 毛利考佑, 谷口雄太, 大久保文哉, 島田敬士, and 緒方広明
+                
+                <br>
+                電子情報通信学会 信学技報 パターン認識・メディア理解研究会 (PRMU2016-105), 2016.
+            
+              <li>
+                <span class="title">研究者情報を活用したURA的産学連携手法について --- 研究者DBとしてのMATCIを活用した産学連携</span>
+                <br>
+                
+                谷口雄太, 水野充, 堀内美穂, 斉藤卓也, and 荒木寛幸
+                
+                <br>
+                RA協議会第1回年次大会, 2015.
+            
+              <li>
+                <span class="title">URAの研究者情報DBとして活用できるMATCIの紹介</span>
+                <br>
+                
+                谷口雄太, 宮本賢治, 永冨太一, 土居修身, 井内健介, 下方晃博, and 荒木寛幸
+                
+                <br>
+                RA協議会第1回年次大会, 2015.
+            
+              <li>
+                <span class="title">iPadを用いた「デジたま講座」教材・教具の開発</span>
+                <br>
+                
+                竹田正幸, 池田大輔, 谷口雄太, 脇田早苗, and 池内昌子
+                
+                <br>
+                日本情報科教育学会第6回全国大会, 2013.
+            
+            </ol>
+          </section>
         </section>
         <section>
-          <h1>Refereed Conference Papers</h1>
-          <ol style="counter-reset:my-ol-counter 30">
-          
-            <li>
-              
-              <span class="title">Few-shot Font Style Transfer between Different Languages</span>
-              
-              <br>
-              
-              Chenhao Li, Yuta Taniguchi, Min Lu, Shin’ichi Konomi
-              
-              <br>
-              
-              In Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV2021),
-              
-              
-              pp.433&ndash;442,
-              
-              2021.
-          
-            <li>
-              
-              <a href="http://doi.org/10.1007/978-3-030-77080-8_5"><span class="title">Generating Travel Recommendations for Older Adults Based on Their Social Media Activities</span></a>
-              
-              <br>
-              
-              Yuhong Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 13th International Conference on Cross-Cultural Design (CCD2021),
-              
-              
-              pp.44&ndash;55,
-              
-              2021.
-          
-            <li>
-              
-              <span class="title">How to Design Collaborative Problem Solving-based STEM Lessons based on the Perspective of Learning Behaviors?</span>
-              
-              <br>
-              
-              Li Chen, Yuta Taniguchi, Atsushi Shimada, Masanori Yamada
-              
-              <br>
-              
-              In Proceedings of IEEE International Conference on Engineering, Technology and Education (TALE2020),
-              
-              
-              pp.197&ndash;204,
-              
-              2020.
-          
-            <li>
-              
-              <span class="title">Development of a Visualization System to Enhance Participation in Computer-Supported Collaboration Learning</span>
-              
-              <br>
-              
-              Yufan Xu, Yuta Taniguchi, Yoshiko Goda, Atsushi Shimada, Masanori Yamada
-              
-              <br>
-              
-              In Proceedings of IEEE International Conference on Engineering, Technology and Education (TALE2020),
-              
-              
-              pp.635&ndash;639,
-              
-              2020.
-          
-            <li>
-              
-              <span class="title">Relationship between Learning Behaviors and Social Presence in Online Collaborative Learning</span>
-              
-              <br>
-              
-              Yufan Xu, Yuta Taniguchi, Yoshiko Goda, Atsushi Shimada, Masanori Yamada
-              
-              <br>
-              
-              In Proceedings of the 17th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2020),
-              
-              
-              2020.
-          
-            <li>
-              
-              <span class="title">Course Recommendation for University Environment</span>
-              
-              <br>
-              
-              Boxuan Ma, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 13th International Conference on Educational Data Mining (EDM2020),
-              
-              
-              pp.460&ndash;466,
-              
-              2020.
-          
-            <li>
-              
-              <span class="title">Examining Language-agnostic Methods of Automatic Coding in the Community of Inquiry Framework</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Shin'ichi Konomi, Yoshiko Goda
-              
-              <br>
-              
-              In Proceedings of the 16th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2019),
-              
-              
-              2019.
-          
-            <li>
-              
-              <span class="title">K-Tips: Knowledge Extension Based on Tailor-made Information Provision System</span>
-              
-              <br>
-              
-              Keita Nakayama, Atsushi Shimada, Tsubasa Minematsu, Yuta Taniguchi, Rin-Ichiro Taniguchi
-              
-              <br>
-              
-              In Proceedings of the 16th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2019),
-              
-              
-              2019.
-          
-            <li>
-              
-              <span class="title">Investigating Error Resolution Processes in C Programming Exercise Courses</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Atsushi Shimada, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 12th International Conference on Educational Data Mining (EDM2019),
-              
-              
-              pp.655&ndash;658,
-              
-              2019.
-          
-            <li>
-              
-              <span class="title">Optimizing Assignment of Students to Courses based on Learning Activity Analytics</span>
-              
-              <br>
-              
-              Atsushi Shimada, Kousuke Mouri, Yuta Taniguchi, Hiroaki Ogata, Rin-Ichiro Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 12th International Conference on Educational Data Mining (EDM2019),
-              
-              
-              pp.178&ndash;187,
-              
-              2019.
-          
-            <li>
-              
-              <span class="title">Toward Automatic Identification of Dataset Names in Scholarly Articles</span>
-              
-              <br>
-              
-              Daisuke Ikeda, Yuta Taniguchi
-              
-              <br>
-              
-              In Proceedings of the 8th International Conference on Data Science and Institutional Research (DSIR2019),
-              
-              
-              pp.1128&ndash;1134,
-              
-              2019.
-          
-            <li>
-              
-              <span class="title">Recommending Highlights on Students' E-Textbooks</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Atsushi Shimada, Masanori Yamada, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 30th conference of the Society for Information Technology and Teacher Education (SITE2019),
-              
-              
-              pp.1128&ndash;1134,
-              
-              2019.
-          
-            <li>
-              
-              <span class="title">Page-wise Difficulty Level Estimation using e-Book Operation Logs</span>
-              
-              <br>
-              
-              Tetsuya Shiino, Atsushi Shimada, Tsubasa Minematsu, Kohei Hatano, Yuta Taniguchi, Shin'ichi Konomi, Rinichiro Taniguchi
-              
-              <br>
-              
-              In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (LAK2019),
-              
-              
-              pp.233&ndash;234,
-              
-              2019.
-          
-            <li>
-              
-              <a href="https://ieeexplore.ieee.org/document/8615254"><span class="title">Relationships between Collaborative Problem Solving, Learning Performance and Learning Behavior in Science Education</span></a>
-              
-              <br>
-              
-              Li Chen, Hirokazu Uemura, Hao Hao, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Hiroaki Ogata, Masanori Yamada
-              
-              <br>
-              
-              In Proceedings of IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE2018),
-              
-              
-              pp.17&ndash;24,
-              
-              2018.
-          
-            <li>
-              
-              <span class="title">BR-Map: Concept Map System Using e-Book logs</span>
-              
-              <br>
-              
-              Masanori Yamada, Atsushi Shimada, Misato Oi, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 15th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2018),
-              
-              
-              pp.248&ndash;255,
-              
-              2018.
-          
-            <li>
-              
-              <span class="title">E-Book Learner Behaviors Under Meaningful Learning Modes</span>
-              
-              <br>
-              
-              Jingyun Wang, Fumiya Okubo, Yuta Taniguchi
-              
-              <br>
-              
-              In Proceedings of the 13th Multidisciplinary Academic Conference on Education, Teaching and Learning (MAC-ETL2018),
-              
-              
-              pp.261&ndash;268,
-              
-              2018.
-          
-            <li>
-              
-              <span class="title">How are Students Struggling in Programming? Understanding Learning Processes from Multiple Learning Logs</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 11th International Conference on Educational Data Mining (EDM2018),
-              
-              
-              pp.510&ndash;513,
-              
-              2018.
-          
-            <li>
-              
-              <span class="title">Relation Analysis between Learning Activities on Digital Learning System and Seating Area in Classrooms</span>
-              
-              <br>
-              
-              Atsushi Shimada, Fumiya Okubo, Yuta Taniguchi, Hiroaki Ogata, Rin-Ichiro Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 11th International Conference on Educational Data Mining (EDM2018),
-              
-              
-              pp.561&ndash;564,
-              
-              2018.
-          
-            <li>
-              
-              <a href="https://www.learntechlib.org/p/182705/"><span class="title">Instructional Design and Evaluation of Science Education to Improve Collaborative Problem Solving Skills</span></a>
-              
-              <br>
-              
-              Li Chen, Hirokazu Uemura, Yoshiko Goda, Fumiya Okubo, Yuta Taniguchi, Misato Oi, Shin'ichi Konomi, Hiroaki Ogata, Masanori Yamada
-              
-              <br>
-              
-              In Proceedings of the 29th conference of the Society for Information Technology and Teacher Education (SITE2018),
-              
-              
-              pp.1364&ndash;1369,
-              
-              2018.
-          
-            <li>
-              
-              <a href="https://dl.acm.org/citation.cfm?id=3170412"><span class="title">Online Change Detection for Monitoring Individual Student Behavior via Clickstream Data on e-Book System</span></a>
-              
-              <br>
-              
-              Atsushi Shimada, Yuta Taniguchi, Fumiya Okubo, Shin'ichi Konomi, Hiroaki Ogata
-              
-              <br>
-              
-              In Proceedings of the 8th International Conference on Learning Analytics & Knowledge (LAK2018),
-              
-              
-              pp.446&ndash;450,
-              
-              2018.
-          
-            <li>
-              
-              <span class="title">Effects of Prior Knowledge of High Achievers on Use of e-Book Highlights and Annotations</span>
-              
-              <br>
-              
-              Misato Oi, Fumiya Okubo, Yuta Taniguchi, Masanori Yamada, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 25th International Conference on Computers in Education (ICCE2017),
-              
-              
-              pp.682&ndash;687,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">Analysis on Students' Usage of Highlighters on E-textbooks in Classroom</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 25th International Conference on Computers in Education (ICCE2017),
-              
-              
-              pp.514&ndash;516,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">A Visualization System for Predicting Learning Activities Using State Transition Graphs</span>
-              
-              <br>
-              
-              Fumiya Okubo, Atsushi Shimada, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 14th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2017),
-              
-              
-              pp.173&ndash;180,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">Exploring Students' Learning Journals with Web-based Interactive Report Tool</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Fumiya Okubo, Atsushi Shimada, Shin'ichi Konomi
-              
-              <br>
-              
-              In Proceedings of the 14th International Conference on Cognition and Exploratory Learning in Digital Age (CELDA2017),
-              
-              
-              pp.251&ndash;254,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">Revealing Hidden Impression Topics in Students' Journals Based on Nonnegative Matrix Factorization</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Daiki Suehiro, Atsushi Shimada, Hiroaki Ogata
-              
-              <br>
-              
-              In Proceedings of IEEE 17th International Conference on Advanced Learning Technologies (ICALT2017),
-              
-              
-              pp.298&ndash;300,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">Face-to-Face Teaching Analytics: Extracting Teaching Activities from E-book Logs via Time-Series Analysis</span>
-              
-              <br>
-              
-              Daiki Suehiro, Yuta Taniguchi, Atsushi Shimada, Hiroaki Ogata
-              
-              <br>
-              
-              In Proceedings of IEEE 17th International Conference on Advanced Learning Technologies (ICALT2017),
-              
-              
-              pp.267&ndash;268,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">M2B System: A Digital Learning Platform for Traditional Classrooms in University</span>
-              
-              <br>
-              
-              Hiroaki Ogata, Yuta Taniguchi, Daiki Suehiro, Atsushi Shimada, Misato Oi, Fumiya Okubo, Masanori Yamada, Kentaro Kojima
-              
-              <br>
-              
-              In Practitioner Track Proceedings of the 7th International Learning Analytics & Knowledge Conference (LAK2017),
-              
-              
-              pp.155&ndash;162,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">Real-time Learning Analytics for C Programming Language Courses</span>
-              
-              <br>
-              
-              Xinyu Fu, Atsushi Shimada, Hiroaki Ogata, Yuta Taniguchi, Daiki Suehiro
-              
-              <br>
-              
-              In Proceedings of the 7th International Learning Analytics & Knowledge Conference (LAK2017),
-              
-              
-              pp.280&ndash;288,
-              
-              2017.
-          
-            <li>
-              
-              <span class="title">Graph Clustering Based on Optimization of a Macroscopic Structure of Clusters</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Daisuke Ikeda
-              
-              <br>
-              
-              In Proceedings of the 14th International Conference on Discovery Science (DS2011),
-              
-              
-              pp.335&ndash;350,
-              
-              2011.
-          
-          </ol>
-        </section>
-        <section>
-          <h1>Refereed Workshop Papers</h1>
-          <ol style="counter-reset:my-ol-counter 11">
-          
-            <li>
-              
-              <span class="title">Composing Learning Environments with e-Textbook System</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Tsubasa Minematsu, Atsushi Shimada
-              
-              
-              <br>
-              
-              In Proceedings of the 3rd International Workshop on Intelligent Textbooks (iTextbooks2021),
-              
-              
-              pp.35&ndash;39,
-              
-              2021.
-              
-          
-            <li>
-              
-              <span class="title">Exploration and Explanation: An Interactive Course Recommendation System for University Environments</span>
-              
-              <br>
-              
-              Boxuan Ma, Min Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              
-              <br>
-              
-              In Proceedings of the ACM IUI 2021 Workshops (ESIDA2021),
-              
-              
-              2021.
-              
-          
-            <li>
-              
-              <span class="title">The Normalized Impact Index for Keywords in Scholarly Papers to Detect Subtle Research Topics</span>
-              
-              <br>
-              
-              Daisuke Ikeda, Yuta Taniguchi, Kazunori Koga
-              
-              
-              <br>
-              
-              In Proceedings of the 8th International Workshop on Mining Scientific Publications (WOSP2020),
-              
-              
-              pp.42&ndash;47,
-              
-              2020.
-              
-          
-            <li>
-              
-              <span class="title">Collecting and Integrating Multimodal Data from a Programming Exercise Environment</span>
-              
-              <br>
-              
-              Yuta Taniguchi, Atsushi Shimada
-              
-              
-              <br>
-              
-              In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge,
-              
-              
-              pp.459&ndash;462,
-              
-              2020.
-              
-          
-            <li>
-              
-              <span class="title">Exploring the Design Space for Explainable Course Recommendation Systems in University Environments</span>
-              
-              <br>
-              
-              Boxuan Ma, Min Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              
-              <br>
-              
-              In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge (XLA2020),
-              
-              
-              pp.492&ndash;499,
-              
-              2020.
-              
-          
-            <li>
-              
-              <span class="title">Understanding Jump Back Behaviors in E-book System</span>
-              
-              <br>
-              
-              Boxuan Ma, Jiadong Chen, Chenhao Li, Likun Liu, Min Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              
-              <br>
-              
-              In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge (DC2020),
-              
-              
-              pp.623&ndash;631,
-              
-              2020.
-              
-          
-            <li>
-              
-              <span class="title">Can the Area marked in eBook Readers Specify Learning Performance?</span>
-              
-              <br>
-              
-              Yufan Xu, Xuewang Geng, Chen Li, Satomi Hamada, Yuta Taniguchi, Hiroaki Ogata, Atsushi Shimada, Masanori Yamada
-              
-              
-              <br>
-              
-              In Companion Proceedings of the 10th International Conference on Learning Analytics & Knowledge (DC2020),
-              
-              
-              pp.638&ndash;648,
-              
-              2020.
-              
-          
-            <li>
-              
-              <span class="title">On the Prediction of Students' Quiz Score by Recurrent Neural Network</span>
-              
-              <br>
-              
-              Fumiya Okubo, Takayoshi Yamashita, Atsushi Shimada, Yuta Taniguchi, Shin'ichi Konomi
-              
-              
-              <br>
-              
-              In Companion Proceedings of the 8th International Conference on Learning Analytics & Knowledge (CrossMMLA2018),
-              
-              
-              pp.1&ndash;6,
-              
-              2018.
-              
-          
-            <li>
-              
-              <span class="title">Towards a Learner-Centric Notification Environment for Multimodal Learning Platforms</span>
-              
-              <br>
-              
-              Shin'ichi Konomi, Atsushi Shimada, Masanori Yamada, Fumiya Okubo, Yuta Taniguchi, Jingyun Wang
-              
-              
-              <br>
-              
-              In Proceedings of Workshop on Multimodal Learning Analytics Across (Physical and Digital) Spaces (CrossMMLA2017),
-              
-              
-              2017.
-              
-          
-            <li>
-              
-              <a href="https://ieeexplore.ieee.org/abstract/document/7096235"><span class="title">Discover Overlapping Topical Regions by Geo-semantic Clustering of Tweets</span></a>
-              
-              <br>
-              
-              Yuta Taniguchi, Daiki Monzen, Lutfiana Sari Ariestien, Daisuke Ikeda
-              
-              
-              <br>
-              
-              In Proceedings of the 8th International Symposium on Mining and Web (MAW2015),
-              
-              
-              pp.552&ndash;557,
-              
-              2015.
-              
-          
-          </ol>
-        </section>
-        <section>
-          <h1>特許</h1>
+          <h1>
+            <span class="en">Awards</span>
+            <span class="ja">受賞</span>
+          </h1>
           <ol style="counter-reset:my-ol-counter 3">
-          
-            <li>
-              <span class="title">産学連携に利用可能な研究情報を収集して提示する研究情報提示装置、研究情報提示システム、及び、研究情報提示方法</span>
-              <br>
-              
-              荒木寛幸, 谷口雄太
-              
-              <br>
-              
-              特開2017-182391
-              
-              <br>
-              
-              2017年
-              
-          
-            <li>
-              <span class="title">産学連携マッチング支援システム</span>
-              <br>
-              
-              荒木寛幸, 谷口雄太
-              
-              <br>
-              
-              特開2017-182392
-              
-              <br>
-              
-              2017年
-              
-          
+            
+              <li>
+                <span class="title">K-Tips: Knowledge Extension Based on Tailor-made Information Provision System</span>
+                <br>
+                
+                Keita Nakayama, Atsushi Shimada, Tsubasa Minematsu, Yuta Taniguchi, and Rin-Ichiro Taniguchi
+                
+                <br>
+                The 16th International Conference on Cognition and Exploratory Learn- ing in Digital Age (CELDA2019) Best Paper Award, 2019.
+            
+              <li>
+                <span class="title">iPad を用いた「デジたま講座」教材・教具の開発</span>
+                <br>
+                
+                竹田正幸, 池田大輔, 谷口雄太, 脇田早苗, and 池内昌子
+                
+                <br>
+                日本情報科教育学会第6回全国大会 優秀デモンストレーション賞, 2013.
+            
           </ol>
         </section>
         <section>
-          <h1>査読無しワークショップ論文</h1>
-          <ol style="counter-reset:my-ol-counter 1">
-          
+          <h1></h1>
+          <h1>
+            <span class="en">Teaching Experiences</span>
+            <span class="ja">教育</span>
+          </h1>
+          <ol style="counter-reset:my-ol-counter 2">
+            
+              
+              <li>
+                <span class="title">データ分析に基づくアクティブラーナーの育成</span>
+                <br>
+                講師
+                <br>
+                2017年
+              
+            
           </ol>
         </section>
-        <section>
-          <h1>国内発表</h1>
-          <ol style="counter-reset:my-ol-counter 22">
-          
-            <li>
-              <span class="title">手書きノートのページセグメンテーションによる学習活動の分析</span>
-              <br>
-              
-              李柏毅, 峰松翼, 谷口雄太, 大久保文哉, 島田敬士
-              
-              <br>
-              第34回教育学習支援情報システム研究発表会 (CLE34), 2021.
-          
-            <li>
-              <span class="title">学習記事推薦のための推薦システムの開発と手法の評価</span>
-              <br>
-              
-              岡井成遊, 大久保文哉, 内山英昭, 峰松翼, 谷口雄太, 島田敬士
-              
-              <br>
-              第34回教育学習支援情報システム研究発表会 (CLE34), 2021.
-          
-            <li>
-              <span class="title">圃場環境ダイジェストシステムの開発とその評価</span>
-              <br>
-              
-              志賀寛羽, 谷口雄太, 峰松翼, 大久保文哉, 島田敬士, 谷口倫一郎
-              
-              <br>
-              第34回教育学習支援情報システム研究発表会 (CLE34), 2021.
-          
-            <li>
-              <span class="title">Multi-level Attention Networks for Font Style Transfer between Different Languages</span>
-              <br>
-              
-              Chenhao Li, Yuta Taniguchi, Min Lu, Shin'ichi Konomi
-              
-              <br>
-              Visual Computing 2020, 2020.
-          
-            <li>
-              <span class="title">構成的学習環境</span>
-              <br>
-              
-              谷口雄太, 峰松翼, 島田敬士
-              
-              <br>
-              第31回教育学習支援情報システム研究発表会 (CLE31), 2020.
-          
-            <li>
-              <span class="title">Design a Course Recommendation System Based on Association Rule for Hybrid Learning Environments</span>
-              <br>
-              
-              Boxuan Ma, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              火の国情報シンポジウム2019, 2019.
-          
-            <li>
-              <span class="title">Preliminary Analysis of Tweets to Predict Suicide Risks</span>
-              <br>
-              
-              Yuhong Lu, Min Lu, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              The 72nd Joint Conference of Electrical, Electronics and Information Engineers in Kyushu, 2019.
-          
-            <li>
-              <span class="title">Exploring a Model for Evaluating Teaching Slides Based on Their Layouts</span>
-              <br>
-              
-              Jiadong Chen, Yuta Taniguchi, Min Lu, Kohei Hatano, Shin'ichi Konomi
-              
-              <br>
-              The 72nd Joint Conference of Electrical,Electronics and Information Engineers in Kyushu, 2019.
-          
-            <li>
-              <span class="title">Automatically Generate Slide Images Using Generative Adversarial Nets</span>
-              <br>
-              
-              Chenhao Li, Yuta Taniguchi, Min Lu, Shin'ichi Konomi
-              
-              <br>
-              The 72nd Joint Conference of Electrical, Electronics and Informa-tion Engineers in Kyushu, 2019.
-          
-            <li>
-              <span class="title">Cleaning Massive Training Data for Intelligent Programming Support System</span>
-              <br>
-              
-              Likun Liu, Yuta Taniguchi, Min Lu, Shin'ichi Konomi
-              
-              <br>
-              The 72nd Joint Conference of Electrical, Electronics andInformation Engineers in Kyushu, 2019.
-          
-            <li>
-              <span class="title">Learning Path Recommendation in University Environments Based on Sequence Mining</span>
-              <br>
-              
-              Boxuan Ma, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              The 81th National Convention of IPSJ, 2019.
-          
-            <li>
-              <span class="title">Comparative Analysis of Adaptive Learning Path Recommendation Algorithms</span>
-              <br>
-              
-              Boxuan Ma, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              The 71st Joint Conference of Electrical, Electronics and Informa-tion Engineers in Kyushu, 2018.
-          
-            <li>
-              <span class="title">Data-Driven Feedback for Students Based on Word Clouds</span>
-              <br>
-              
-              Shiman Cui, Yuta Taniguchi, Shin'ichi Konomi
-              
-              <br>
-              The 71st Joint Conference of Electrical, Electronics and Information Engineers in Kyushu, 2018.
-          
-            <li>
-              <span class="title">Learning Style Based Collaborative Learning Construction: Can it Improve Group Work in a Learning Environment</span>
-              <br>
-              
-              Yiduo Gao, Yuta Taniguchi, Shin'ichi Konomi, Kentaro Kojima, Atsushi Shimada, Hiroaki Ogata
-              
-              <br>
-              電子情報通信学会 信学技報 教育工学研究会 (ET2017-79), 2018.
-          
-            <li>
-              <span class="title">高等学校におけるラーニングアナリティックスに基づいた授業の試行</span>
-              <br>
-              
-              山田政寛, 大久保文哉, 谷口雄太, 毛利考佑, 島田敬士, 大井京, 緒方広明, 井上功一, 木實新一
-              
-              <br>
-              第42回 教育システム情報学会 全国大会, 2017.
-          
-            <li>
-              <span class="title">Extracting Teaching Activities from E-book Logs Using Time-Series Shapelets</span>
-              <br>
-              
-              Daiki Suehiro, Yuta Taniguchi, Atsushi Shimada, Hiroaki Oagata
-              
-              <br>
-              第20回画像の認識・理解シンポジウム（MIRU2017), 2017.
-          
-            <li>
-              <span class="title">Behavioral Analysis and Visualization on Learning Logs from the CALL Course</span>
-              <br>
-              
-              Li Huiyong, Tsuchiya Tomoyuki, Suehiro Daiki, Taniguchi Yuta, Shimada Atsushi, Suzuki Yubun, Ohashi Hiroshi, Ogata Hiroaki
-              
-              <br>
-              2017年度 人工知能学会全国大会, 2017.
-          
-            <li>
-              <span class="title">教育データのオープン化に向けて</span>
-              <br>
-              
-              末廣大貴, 毛利考佑, 谷口雄太, 大久保文哉, 島田敬士, 緒方広明
-              
-              <br>
-              電子情報通信学会 信学技報 パターン認識・メディア理解研究会 (PRMU2016-105), 2016.
-          
-            <li>
-              <span class="title">研究者情報を活用したURA的産学連携手法について --- 研究者DBとしてのMATCIを活用した産学連携</span>
-              <br>
-              
-              谷口雄太, 水野充, 堀内美穂, 斉藤卓也, 荒木寛幸
-              
-              <br>
-              RA協議会第1回年次大会, 2015.
-          
-            <li>
-              <span class="title">URAの研究者情報DBとして活用できるMATCIの紹介</span>
-              <br>
-              
-              谷口雄太, 宮本賢治, 永冨太一, 土居修身, 井内健介, 下方晃博, 荒木寛幸
-              
-              <br>
-              RA協議会第1回年次大会, 2015.
-          
-            <li>
-              <span class="title">iPadを用いた「デジたま講座」教材・教具の開発</span>
-              <br>
-              
-              竹田正幸, 池田大輔, 谷口雄太, 脇田早苗, 池内昌子
-              
-              <br>
-              日本情報科教育学会第6回全国大会, 2013.
-          
-          </ol>
-        </section>
-      </section>
-      <section>
-        <h1>受賞</h1>
-        <ol style="counter-reset:my-ol-counter 3">
-          
-            <li>
-              <span class="title">K-Tips: Knowledge Extension Based on Tailor-made Information Provision System</span>
-              <br>
-              
-              Keita Nakayama, Atsushi Shimada, Tsubasa Minematsu, Yuta Taniguchi, Rin-Ichiro Taniguchi
-              
-              <br>
-              The 16th International Conference on Cognition and Exploratory Learn- ing in Digital Age (CELDA2019) Best Paper Award, 2019.
-          
-            <li>
-              <span class="title">iPad を用いた「デジたま講座」教材・教具の開発</span>
-              <br>
-              
-              竹田正幸, 池田大輔, 谷口雄太, 脇田早苗, 池内昌子
-              
-              <br>
-              日本情報科教育学会第6回全国大会 優秀デモンストレーション賞, 2013.
-          
-        </ol>
-      </section>
-      <section>
-        <h1>教育</h1>
-        <ol style="counter-reset:my-ol-counter 2">
-          
-            
-            <li>
-              <span class="title">データ分析に基づくアクティブラーナーの育成</span>
-              <br>
-              講師
-              <br>
-              2017年
-            
-          
-        </ol>
-      </section>
-    </div>
-  </section>
-</body>
+      </div>
+    </section>
+  </body>
 
 </html>
